@@ -1,0 +1,24 @@
+unidadesDeLeche = int(input("Ingrese unidades de leche a comprar"))
+esJubiado = int(input("Ingrese 1 si el cliente es Jubilado"))
+
+montoParcial = unidadesDeLeche * 1000
+print(f"unidadesDeLeche {unidadesDeLeche} esJubilado {esJubilado}")
+#Leche = 15 y esJubilado=1
+if(Leche <=12 and not esJubilado):
+    print("Leche <=12 and not esJubilado")
+    montoAPagar = montoParcial
+elif((Leche >12 and Leche <= 24) and not esJubilado):
+    print("(Leche >12 and leche <= 24) and not esJubilado")
+    montoAPagar = montoParcial * 0.9
+elif(unidadesDeLeche > 24 and not esJubilado):
+    print("Leche > 24 and not esJubilado")
+    montoAPagar = montoParcial * 0.85
+elif(Leche <=12 and esJubiado):
+    print("unidadesDeLeche <=12 and esJubiado")
+    montoAPagar = montoParcial * 0.9
+elif((unidadesDeLeche >12 and <= 24) and esJubiado):#ok
+    print("(unidadesDeLeche >12 and unidadesDeLeche <= 24) and esJubiado")#ok
+    montoAPagar = montoParcial * 0.8
+elif(unidadesDeLeche > 24 and esJubiado):
+    print("unidadesDeLeche > 24 and esJubiado")
+    montoAPagar = montoParcial * 0.75
